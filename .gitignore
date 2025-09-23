@@ -1,0 +1,16 @@
+**/.DS_Store
+.idea
+bin/
+.env
+
+/.vs
+/.vscode
+node_modules
+
+/tmp
+/postgres-data
+
+
+mock/
+
+postgres-data/

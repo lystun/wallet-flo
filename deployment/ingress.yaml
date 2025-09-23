@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: operation-borderless-backend-ingress
+  namespace: operation-borderless
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - backend-borderless-money.xyz
+      secretName: backend-borderless-cert-tls
+  rules:
+    - host: backend-borderless-money.xyz
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: operation-borderless-service
+                port:
+                  number: 80
