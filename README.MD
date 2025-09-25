@@ -42,6 +42,3 @@ for MacOS run
 ### Starting Server Locally
 - create a `.env` file in the base directory with sample fields from `.env.sample`
 - run `make run` to run the app in docker.
-
-## Frontend
-This was implemented using React.js
