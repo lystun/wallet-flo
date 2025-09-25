@@ -3,7 +3,6 @@ This is a FinTech App that mimics some of the key features of how a real FinTech
 
 ## Tech Stack Used
 - Golang (Backend)
-- React (Frontend)
 - Postgres (Database) 
 
 ## Features Walk Through
@@ -22,17 +21,11 @@ Features Implemented are
 
 ## Project Parts
 The Project has 2 parts:
-- Backend Implementation: This (borderless-money) repository
-- Frontend Implementation: https://github.com/Kjasuquo/borderless-money-frontend
+- Backend Implementation: This (wallet-flo) repository
 
 ## Backend
 ### Major API Integration
 - FOREX_API_KEY: used to get real live rates. (My own key provided in the .env.sample). It is advisable you create your own key to test locally with
-
-Testing deployed backend can be done through `https://backend-borderless-money.xyz/`
-
-### Deployment
-The was done on GCP kubernetes cluster. And `https://backend-borderless-money.xyz/` was acquired from namecheap inorder to secure it with https
 
 ### Installation
 Before installing, download and install go version 1.23.0 and above from **[golang's official website](https://go.dev/doc/install)**
@@ -52,15 +45,3 @@ for MacOS run
 
 ## Frontend
 This was implemented using React.js
-
-### Deployment
-The was done on GCP kubernetes cluster. And `https://borderless-money.xyz/` was acquired from namecheap inorder to secure it with https and connect to the backend https
-
-### Starting Frontend Locally
-- npm install
-- npm start
-
-But note that if you run the React app locally, you won't be able to make calls to the https urls. You would need to point the axios url to your local backend endpoint/localhost
-
-# WARNING
-The GCP Kubernetes Cluster and provisioned database (for the backend) will be shut down after this codebase achieves its purpose. So for clarification contact `okoasuquo@gmail.com` 
