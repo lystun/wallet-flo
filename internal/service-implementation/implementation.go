@@ -4,10 +4,10 @@ import (
 	"context"
 	"net/http"
 
-	"operation-borderless/internal/domain/dto"
-	"operation-borderless/internal/domain/model"
-	"operation-borderless/internal/domain/repositories"
-	"operation-borderless/pkg/config"
+	"wallet-flo/internal/domain/dto"
+	"wallet-flo/internal/domain/model"
+	"wallet-flo/internal/domain/repositories"
+	"wallet-flo/pkg/config"
 )
 
 type ServiceClient struct {

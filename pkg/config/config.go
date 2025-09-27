@@ -33,10 +33,6 @@ func InitConfigs() (*Config, error) {
 		return nil, fmt.Errorf("error loading environment variables: %v", err)
 	}
 
-	if err != nil {
-		return nil, err
-	}
-
 	log.Println("InitConfigs: ", cfg)
 
 	return &cfg, nil

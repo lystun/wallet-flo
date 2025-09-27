@@ -9,8 +9,8 @@ import (
 	"log"
 	"net/http"
 
-	"operation-borderless/internal/domain/dto"
-	"operation-borderless/pkg/config"
+	"wallet-flo/internal/domain/dto"
+	"wallet-flo/pkg/config"
 )
 
 type ExternalAPIClient struct {

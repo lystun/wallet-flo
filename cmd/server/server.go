@@ -10,11 +10,11 @@ import (
 	"syscall"
 	"time"
 
-	"operation-borderless/internal/api"
-	"operation-borderless/internal/infrastructure/postgres"
-	serviceimplementation "operation-borderless/internal/service-implementation"
-	"operation-borderless/pkg/config"
-	"operation-borderless/pkg/db"
+	"wallet-flo/internal/api"
+	"wallet-flo/internal/infrastructure/postgres"
+	serviceimplementation "wallet-flo/internal/service-implementation"
+	"wallet-flo/pkg/config"
+	"wallet-flo/pkg/db"
 )
 
 func Start() {

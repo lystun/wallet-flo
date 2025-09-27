@@ -1,6 +1,6 @@
 package dto
 
-import "operation-borderless/pkg/config"
+import "wallet-flo/pkg/config"
 
 type Wallet struct {
 	Models

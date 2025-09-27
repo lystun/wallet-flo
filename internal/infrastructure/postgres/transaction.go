@@ -2,9 +2,10 @@ package postgres
 
 import (
 	"context"
+
 	"gorm.io/gorm"
 
-	"operation-borderless/internal/domain/model"
+	"wallet-flo/internal/domain/model"
 )
 
 func (d *database) createTransaction(ctx context.Context, tx *gorm.DB, transaction *model.Transaction) (string, error) {

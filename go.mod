@@ -1,4 +1,4 @@
-module operation-borderless
+module wallet-flo
 
 go 1.23.0
 

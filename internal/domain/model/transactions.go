@@ -1,7 +1,7 @@
 package model
 
 import (
-	"operation-borderless/internal/domain/dto"
+	"wallet-flo/internal/domain/dto"
 )
 
 type Transaction struct {

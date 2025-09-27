@@ -11,8 +11,8 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 
-	"operation-borderless/internal/domain/model"
-	"operation-borderless/pkg/config"
+	"wallet-flo/internal/domain/model"
+	"wallet-flo/pkg/config"
 )
 
 func Init(cfg *config.Config) (*gorm.DB, error) {

@@ -1,6 +1,6 @@
 package model
 
-import "operation-borderless/internal/domain/dto"
+import "wallet-flo/internal/domain/dto"
 
 type Wallet struct {
 	Models

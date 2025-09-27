@@ -7,7 +7,7 @@ import (
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 
-	"operation-borderless/internal/api"
+	"wallet-flo/internal/api"
 )
 
 func DefineRoutes(handler *api.Handler) *gin.Engine {
@@ -37,7 +37,6 @@ func DefineRoutes(handler *api.Handler) *gin.Engine {
 		r.GET("/wallet/:userID", handler.GetUserWallets())
 		r.GET("transactions/:userID", handler.GetUserTransactions())
 	}
-
 	return router
 }
 

@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: operation-borderless-service
-  namespace: operation-borderless
+  name: wallet-flo-service
+  namespace: wallet-flo
 spec:
   selector:
-    app: operation-borderless
+    app: wallet-flo
   ports:
     - protocol: TCP
       port: 80

@@ -10,10 +10,10 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"operation-borderless/internal/domain/dto"
-	"operation-borderless/internal/domain/services"
-	"operation-borderless/pkg/config"
-	"operation-borderless/pkg/util"
+	"wallet-flo/internal/domain/dto"
+	"wallet-flo/internal/domain/services"
+	"wallet-flo/pkg/config"
+	"wallet-flo/pkg/util"
 )
 
 type Handler struct {

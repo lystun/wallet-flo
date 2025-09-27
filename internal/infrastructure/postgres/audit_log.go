@@ -3,7 +3,7 @@ package postgres
 import (
 	"context"
 
-	"operation-borderless/internal/domain/model"
+	"wallet-flo/internal/domain/model"
 )
 
 func (d *database) CreateAuditLogs(ctx context.Context, auditLog model.AuditLog) error {

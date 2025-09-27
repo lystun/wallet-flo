@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: operation-borderless-conf
-  namespace: operation-borderless
+  name: wallet-flo-conf
+  namespace: wallet-flo
 data:
  # Database Credentials
  DB_NAME: "postgres"

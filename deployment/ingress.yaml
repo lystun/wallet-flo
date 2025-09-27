@@ -1,8 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: operation-borderless-backend-ingress
-  namespace: operation-borderless
+  name: wallet-flo-backend-ingress
+  namespace: wallet-flo
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
     nginx.ingress.kubernetes.io/rewrite-target: /
@@ -20,6 +20,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: operation-borderless-service
+                name: wallet-flo-service
                 port:
                   number: 80

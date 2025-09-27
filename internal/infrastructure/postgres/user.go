@@ -3,10 +3,11 @@ package postgres
 import (
 	"context"
 	"fmt"
+
 	"gorm.io/gorm"
 
-	"operation-borderless/internal/domain/model"
-	"operation-borderless/pkg/config"
+	"wallet-flo/internal/domain/model"
+	"wallet-flo/pkg/config"
 )
 
 func (d *database) createUser(ctx context.Context, tx *gorm.DB, user *model.User) (string, error) {

@@ -1,4 +1,4 @@
-# About Operation-Borderless
+# About wallet-flo
 This is a FinTech App that mimics some of the key features of how a real FinTech works. It uses your registered email address to send money.
 
 ## Tech Stack Used

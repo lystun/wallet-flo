@@ -1,8 +1,8 @@
 package model
 
 import (
-	"operation-borderless/internal/domain/dto"
 	"time"
+	"wallet-flo/internal/domain/dto"
 )
 
 type AuditLog struct {

@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"operation-borderless/cmd/server"
+	"wallet-flo/cmd/server"
 )
 
 func main() {

@@ -3,7 +3,7 @@ package repositories
 import (
 	"context"
 
-	"operation-borderless/internal/domain/model"
+	"wallet-flo/internal/domain/model"
 )
 
 type Repository interface {

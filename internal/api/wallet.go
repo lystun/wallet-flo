@@ -2,14 +2,15 @@ package api
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 	"strings"
 
 	"github.com/gin-gonic/gin"
 
-	"operation-borderless/internal/domain/dto"
-	"operation-borderless/pkg/config"
-	"operation-borderless/pkg/util"
+	"wallet-flo/internal/domain/dto"
+	"wallet-flo/pkg/config"
+	"wallet-flo/pkg/util"
 )
 
 func (h *Handler) CreateWallet() gin.HandlerFunc {
@@ -251,6 +252,7 @@ func (h *Handler) Transfer() gin.HandlerFunc {
 
 func (h *Handler) GetUserWallets() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
+		log.Println("Fetching user wallets")
 		userID := ctx.Param("userID")
 		ip := h.GetClientPublicIP(ctx)
 		userAgent := ctx.GetHeader("User-Agent")

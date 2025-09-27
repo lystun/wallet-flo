@@ -3,7 +3,7 @@ package services
 import (
 	"context"
 
-	"operation-borderless/internal/domain/dto"
+	"wallet-flo/internal/domain/dto"
 )
 
 type ExternalAPIs interface {

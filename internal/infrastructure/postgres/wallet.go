@@ -3,9 +3,10 @@ package postgres
 import (
 	"context"
 	"fmt"
+
 	"gorm.io/gorm"
 
-	"operation-borderless/internal/domain/model"
+	"wallet-flo/internal/domain/model"
 )
 
 func (d *database) CreateWallet(ctx context.Context, wallet *model.Wallet) (string, error) {
