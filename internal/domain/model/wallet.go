@@ -1,12 +1,20 @@
 package model
 
-import "wallet-flo/internal/domain/dto"
+import (
+	"wallet-flo/internal/domain/dto"
+)
 
 type Wallet struct {
 	Models
-	UserID   string `gorm:"index:user_currency,unique"`
-	Currency string `gorm:"index:user_currency,unique"`
-	Balance  float64
+	Pin            string
+	UserID         string `gorm:"unique"`
+	Currency       string `gorm:"unique"`
+	Email          string `gorm:"unique"`
+	AccountNo      string `gorm:"unique"`
+	PhoneNumber    string `gorm:"unique"`
+	Balance        float64
+	WalletCategory string
+	WalletType     string
 }
 
 func (w *Wallet) ToWalletDTO() dto.Wallet {

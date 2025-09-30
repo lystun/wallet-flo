@@ -53,8 +53,8 @@ func Init(cfg *config.Config) (*gorm.DB, error) {
 		log.Panic(err)
 	}
 
-	db.SetMaxOpenConns(60)                  // maximum number of open connection to database
-	db.SetMaxIdleConns(40)                  // maximum number of connections in the idle connection pool.
+	db.SetMaxOpenConns(25)                  // maximum number of open connection to database
+	db.SetMaxIdleConns(25)                  // maximum number of connections in the idle connection pool.
 	db.SetConnMaxLifetime(10 * time.Minute) // maximum amount of time a connection may be reused
 
 	if err = db.Ping(); err != nil {

@@ -49,7 +49,7 @@ func (h *Handler) AuditLogs(ctx context.Context, userID, userAgent, ipAddress st
 		Country:   country,
 		Browser:   browser,
 		Timestamp: time.Now(),
-	}
+	} 
 
 	err = h.Wallet.CreateAuditLogs(ctx, auditLog)
 	if err != nil {
